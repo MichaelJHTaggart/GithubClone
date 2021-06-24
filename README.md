@@ -1,8 +1,6 @@
 # Github Repositories with Search Functionality
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-I livestreamed the creation of this app on my twitch account: [b1ueh4wk] (https://www.twitch.tv/b1ueh4wk/)
+I livestreamed the creation of this app on my twitch account: [b1ueh4wk](https://www.twitch.tv/b1ueh4wk/).
 
 Total time spent on project: __ hours
 
