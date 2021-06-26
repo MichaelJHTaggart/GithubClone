@@ -16,14 +16,11 @@ function App() {
       </Grid>
       <Grid item xs={8}>
         <Header />
-      </Grid>
-      <Grid item xs={8}>
+
         <Search />
-      </Grid>
-      <Grid item xs={8}>
+
         <RepositoryList />
-      </Grid>
-      <Grid item xs={8}>
+
         <Repository />
       </Grid>
     </Grid>

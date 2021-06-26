@@ -21,7 +21,7 @@ const SearchBar = () => {
 
   if (search) {
    axios.get(`https://api.github.com/search/repositories?q=${search}`).then((res) => {
-    setOutput(res)
+    setOutput(res.data.items)
     console.log(output)
    })
   }
@@ -40,13 +40,17 @@ const SearchBar = () => {
      label="Search for a repository..."
      color="primary"
      variant="outlined"
-     fullwidth
+     fullWidth
      required
     />
    </form>
 
    <div>
-    <p>Search results</p>
+
+    {output[0].full_name}
+    {output[1].full_name}
+    {output[2].full_name}
+    {output[3].full_name}
    </div>
   </div>
  )
