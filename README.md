@@ -5,9 +5,11 @@ I livestreamed the creation of this app on my twitch account: [b1ueh4wk](https:/
 Total time spent on project: 9 hours
 <img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/Screen%20Shot%202021-06-26%20at%2012.37.00%20AM.png">
 
-## Material UI, Postman, and Exalidraw used
+## Material UI, React, Postman, and Exalidraw
 
 This project attempts to recreate the look of the Github website while giving it the functionality of a working search bar.
+
+Here is a picture of my basic wireframing.
 
 <img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/wireframe.png">
 
