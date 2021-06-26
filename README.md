@@ -1,4 +1,4 @@
-# Github Repositories with Search Functionality
+# Github Clone with Search Functionality
 
 I livestreamed the creation of this app on my twitch account: [b1ueh4wk](https://www.twitch.tv/b1ueh4wk/).
 
@@ -10,7 +10,7 @@ This project attempts to recreate the look of a popular website while giving it 
 
 ## How to run the project
 
-Open the repository at [GithubClone] ()
+Open the repository at [GithubClone] (https://github.com/MichaelJHTaggart/GithubClone)
 
 Fork the repository
 

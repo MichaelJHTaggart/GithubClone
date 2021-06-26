@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Repository = () => {
+const RepositoryList = () => {
  return (
-  <div>
-
+  <div className="white">
+   <p>Repository List</p>
   </div>
  )
 }
 
-export default Repository
+export default RepositoryList
