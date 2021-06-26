@@ -3,7 +3,7 @@
 I livestreamed the creation of this app on my twitch account: [b1ueh4wk](https://www.twitch.tv/b1ueh4wk/).
 
 Total time spent on project: 9 hours
-<img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/wireframe.png">
+<img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/Screen%20Shot%202021-06-26%20at%2012.37.00%20AM.png">
 
 ## Material UI, Postman, and Exalidraw used
 
@@ -17,9 +17,9 @@ Open the repository at [GithubClone](https://github.com/MichaelJHTaggart/GithubC
 
 Fork the repository
 
-Copy the clone information
+Copy the clone information (example shown below)
 
-<img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/wireframe.png">
+<img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/Screen%20Shot%202021-06-26%20at%2012.33.57%20AM.png">
 
 Open terminal or command line 
 
