@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { Paper } from '@material-ui/core';
 import axios from 'axios';
 
 const useStyles = makeStyles({
@@ -21,9 +24,12 @@ const SearchBar = () => {
 
   if (search) {
    axios.get(`https://api.github.com/search/repositories?q=${search}`).then((res) => {
-    setOutput(res.data.items)
-    console.log(output)
-   })
+    let array = res.data.items
+    let newArray = []
+    array.forEach((el, index) => { newArray.push((array[index].full_name)) })
+    setOutput(newArray)
+   }
+   )
   }
  }
 
@@ -46,12 +52,17 @@ const SearchBar = () => {
    </form>
 
    <div>
-
-    {output[0].full_name}
-    {output[1].full_name}
-    {output[2].full_name}
-    {output[3].full_name}
+    {output.map((repository) => {
+     return (
+      <Grid item xs={9}>
+       <Paper>
+        <Typography variant="h5" color="primary">{repository}</Typography>
+       </Paper>
+      </Grid>
+     )
+    })}
    </div>
+
   </div>
  )
 }

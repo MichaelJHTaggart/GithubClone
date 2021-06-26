@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Badge from '@material-ui/core/Badge';
 
 import Paper from '@material-ui/core/Paper';
@@ -11,7 +11,7 @@ import AccountTreeIcon from '@material-ui/icons/AccountTree';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 
 export default function Header() {
- const [value, setValue] = React.useState(1);
+ const [value, setValue] = useState(1);
 
  const handleChange = (event, newValue) => {
   setValue(newValue);
