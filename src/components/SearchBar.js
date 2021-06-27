@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
+import { Link } from '@material-ui/core';
 import axios from 'axios';
 
 const useStyles = makeStyles({
@@ -17,7 +18,15 @@ const useStyles = makeStyles({
 const SearchBar = () => {
  const classes = useStyles();
  const [search, setSearch] = useState('')
- const [output, setOutput] = useState([])
+ const [name, setName] = useState([])
+ const [url, setUrl] = useState([])
+ const [description, setDescription] = useState([])
+ const [language, setLanguage] = useState([])
+
+ const openNewTab = (url) => {
+  const win = window.open(`${url}`);
+  win.focus();
+ }
 
  const handleSubmit = (e) => {
   e.preventDefault()
@@ -25,9 +34,16 @@ const SearchBar = () => {
   if (search) {
    axios.get(`https://api.github.com/search/repositories?q=${search}`).then((res) => {
     let array = res.data.items
-    let newArray = []
-    array.forEach((el, index) => { newArray.push((array[index].full_name)) })
-    setOutput(newArray)
+    let repositoryName = []
+    let repositoryUrl = []
+    array.map((el, index) => { return repositoryName.push((array[index].full_name)) })
+    setName(repositoryName)
+    array.map((el, index) => { return repositoryUrl.push((array[index].svn_url)) })
+    setUrl(repositoryUrl)
+    array.map((el, index) => { return description.push((array[index].description)) })
+    setDescription(description)
+    array.map((el, index) => { return language.push((array[index].language)) })
+    setLanguage(language)
    }
    )
   }
@@ -52,17 +68,20 @@ const SearchBar = () => {
    </form>
 
    <div>
-    {output.map((repository) => {
+    {name.map((repository, index) => {
      return (
-      <Grid item xs={9}>
+      <Grid item xs={12}>
        <Paper>
-        <Typography variant="h5" color="primary">{repository}</Typography>
+        <Link onClick={() => openNewTab(`${url[index]}`)} aria-label="Open this repository">
+         <Typography variant="h5" color="primary">{repository}</Typography>
+        </Link>
+        <Typography variant="subtitle1" display="block" gutterBottom>Description: {description[index]}</Typography>
+        <Typography variant="caption" display="block" gutterBottom>Coding Language: {language[index]}</Typography>
        </Paper>
       </Grid>
      )
     })}
    </div>
-
   </div>
  )
 }
