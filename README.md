@@ -39,12 +39,12 @@ You may use a web browser extension with your IDE to view this code locally!
 ## No test suite
 
 ## Future improvements
-First and foremost add more features to the items that are pulled up from the search. Make each of the titles a link to the repository, and try to add the other icons and images. 
+I would like to add more features to the search results.
 
-Second add a nav bar at the top and a footer at the bottom.
+Add a nav bar at the top and a footer at the bottom.
 
-There is so much more that I could add from there, but that is about all I would do to this to finish it up. 
+Obviously I could make this more than a one page application, but that is about all I would do with this clone.
 
 ## Feedback on exercise
 
-This was an excellent exercise! I have lots I need to improve on but it definitely challenged me to think critically under a time constraint.
+This was an excellent exercise! I have lots I need to improve on but it definitely challenged me to think critically under a time constraint. It was great practice to get more used to Material UI. I would like to understand spacing a bit better with Material UI though. So much more to learn!
