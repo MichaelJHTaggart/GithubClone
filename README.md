@@ -2,8 +2,9 @@
 
 I livestreamed the creation of this app on my twitch account: [b1ueh4wk](https://www.twitch.tv/b1ueh4wk/).
 
-Total time spent on project: 9 hours
-<img src="https://github.com/MichaelJHTaggart/GithubClone/blob/main/src/assets/Screen%20Shot%202021-06-26%20at%2012.37.00%20AM.png">
+Total time spent on project: 10 hours
+
+https://user-images.githubusercontent.com/63270278/123530734-03728f80-d6bb-11eb-8da5-4203e7b2674f.mov
 
 ## Material UI, React, Postman, and Exalidraw
 
